@@ -1,0 +1,129 @@
+#service {
+    padding-top: 70px;
+}
+
+:root {
+    --Darkblue: #002547;
+    --lightblue: #97dae15b;
+}
+
+.footer-section {
+    margin-top: 15%;
+}
+
+.services h2 {
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--Darkblue);
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.service-box {
+    text-align: center;
+    padding: 35px 15px;
+    overflow: hidden;
+    position: relative;
+    transition: all linear 1s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.service-box:hover {
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+    cursor: pointer;
+}
+
+.service-box::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #ffffff #ffffff rgba(1, 1, 1, .2) rgba(0, 0, 0, .2);
+    top: -40px;
+    right: -40px;
+    transition: all linear .3s;
+}
+
+.service-box:hover::before {
+    top: 0;
+    right: 0;
+}
+
+.service-box i {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 14px;
+    color: var(--Darkblue);
+    transition: all linear .3s;
+}
+
+.service-box .title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--Darkblue);
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 0 16px 0;
+    transition: all linear .3s;
+}
+
+.service-box .description {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--Darkblue);
+    line-height: 25px;
+    margin: 0;
+    transition: all linear .3s;
+}
+
+.service-box:hover i,
+.service-box:hover .title,
+.service-box:hover .description {
+    color: #fff;
+}
+
+.typed {
+    display: inline-block;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+
+
+.mins {
+    background-image: url('../imag/about-section.svg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    align-items: start;
+    text-align: start;
+    padding-left: 150px;
+}
+
+.move p {
+    font-size: 20px;
+    color: #1b1b1b;
+}
+
+.move p span {
+    font-weight: 600;
+    color: var(--Darkblue);
+}
+
+.move h1 {
+    font-weight: 600;
+    color: var(--Darkblue);
+}
